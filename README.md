@@ -2,7 +2,7 @@
 
 Start command to run app with docker compose:
 ```
-$ docker-compose up --buid -d
+$ docker-compose up --build -d
 ```
 Функционал Администратора:
 1. Список пользователей (по алфавиту, с пагинацией)

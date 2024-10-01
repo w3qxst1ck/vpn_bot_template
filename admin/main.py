@@ -7,6 +7,7 @@ from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import BotCommand, BotCommandScopeDefault
 from config import BOT_TOKEN
+from database.database import create_db
 from routers.router import router
 
 
@@ -35,4 +36,5 @@ async def start_bot() -> None:
 
 if __name__ == "__main__":
     logger.info("Запуск бота...")
+    create_db()
     asyncio.run(start_bot())
